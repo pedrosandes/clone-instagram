@@ -20,6 +20,18 @@ body {
   display: flex;
   margin-top: 32px;
   padding: 0 45px;
+
+  @media (max-width: 426px) {
+    margin-top: initial;
+    padding: initial;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    .login-image {
+      display: none;
+    }
+  }
 }
 
 .l-login {
@@ -27,6 +39,16 @@ body {
   @include flex(center, flex-start);
   flex-direction: column;
   margin-left: -10px;
+
+  @media (max-width: 768px) {
+    margin: initial;
+  }
+
+  @media (max-width: 426px) {
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /*--------------------------------------- 
@@ -39,8 +61,14 @@ body {
 
 .c-login {
   @include border();
-  padding: 10px 30px 20px 30px;
+  padding: 10px 40px 20px 40px;
   background-color: $white-primary;
+
+  @media (max-width: 426px) {
+    border: none;
+    padding: initial;
+    background-color: $white-secondary;
+  }
 
   .c-login__brand {
     text-align: center;
@@ -49,6 +77,14 @@ body {
 
   .c-login__content {
     text-align: center;
+
+    @media (max-width: 768px) {
+      max-width: 268px;
+    }
+
+    @media (max-width: 321px) {
+      max-width: 240px;
+    }
   }
 
   .c-login__input {
@@ -66,8 +102,10 @@ body {
   }
 
   .login__or {
-    @include flex(space-around, center);
+    @include flex(space-between, center);
     margin: 20px 0 25px 0;
+    text-align: center;
+
     p {
       text-transform: uppercase;
       font-size: $font12;
@@ -127,6 +165,11 @@ body {
   box-sizing: border-box;
   padding: 20px 30px;
   margin: 20px 0;
+
+  @media (max-width: 426px) {
+    background-color: $white-secondary;
+    border: none;
+  }
 
   .create__text {
     font-size: $font13;

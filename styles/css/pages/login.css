@@ -109,6 +109,20 @@ body {
   margin-top: 32px;
   padding: 0 45px;
 }
+@media (max-width: 426px) {
+  .c-main {
+    margin-top: initial;
+    padding: initial;
+  }
+}
+@media (max-width: 768px) {
+  .c-main {
+    justify-content: center;
+  }
+  .c-main .login-image {
+    display: none;
+  }
+}
 
 .l-login {
   width: 350px;
@@ -117,6 +131,18 @@ body {
   align-items: flex-start;
   flex-direction: column;
   margin-left: -10px;
+}
+@media (max-width: 768px) {
+  .l-login {
+    margin: initial;
+  }
+}
+@media (max-width: 426px) {
+  .l-login {
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /*--------------------------------------- 
@@ -128,8 +154,15 @@ body {
 .c-login {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
-  padding: 10px 30px 20px 30px;
+  padding: 10px 40px 20px 40px;
   background-color: #ffffff;
+}
+@media (max-width: 426px) {
+  .c-login {
+    border: none;
+    padding: initial;
+    background-color: #fafafa;
+  }
 }
 .c-login .c-login__brand {
   text-align: center;
@@ -137,6 +170,16 @@ body {
 }
 .c-login .c-login__content {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .c-login .c-login__content {
+    max-width: 268px;
+  }
+}
+@media (max-width: 321px) {
+  .c-login .c-login__content {
+    max-width: 240px;
+  }
 }
 .c-login .c-login__input {
   background-color: #fafafa;
@@ -151,9 +194,10 @@ body {
 }
 .c-login .login__or {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 20px 0 25px 0;
+  text-align: center;
 }
 .c-login .login__or p {
   text-transform: uppercase;
@@ -207,6 +251,12 @@ body {
   box-sizing: border-box;
   padding: 20px 30px;
   margin: 20px 0;
+}
+@media (max-width: 426px) {
+  .create {
+    background-color: #fafafa;
+    border: none;
+  }
 }
 .create .create__text {
   font-size: 0.813rem;
