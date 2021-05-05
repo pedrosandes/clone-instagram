@@ -1,0 +1,194 @@
+//ESTILIZAÇÃO DA TELA DE LOGIN
+@import '../screen.scss';
+
+body {
+  color: $black-primary;
+  background-color: $white-secondary;
+}
+
+/*--------------------------------------- 
+[$CONTAINERS]
+----------------------------------------*/
+
+.c-site {
+  width: 100%;
+  max-width: 935px;
+  margin: auto;
+}
+
+.c-main {
+  display: flex;
+  margin-top: 32px;
+  padding: 0 45px;
+}
+
+.l-login {
+  width: 350px;
+  @include flex(center, flex-start);
+  flex-direction: column;
+  margin-left: -10px;
+}
+
+/*--------------------------------------- 
+// [END CONTAINERS]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$CONTAINER LOGIN]
+----------------------------------------*/
+
+.c-login {
+  @include border();
+  padding: 10px 30px 20px 30px;
+  background-color: $white-primary;
+
+  .c-login__brand {
+    text-align: center;
+    margin: 20px 0 40px 0;
+  }
+
+  .c-login__content {
+    text-align: center;
+  }
+
+  .c-login__input {
+    background-color: $white-secondary;
+
+    &:nth-child(2) {
+      margin: 5px 0 10px 0;
+    }
+  }
+
+  .c-login__btn {
+    color: $white-primary;
+    font-weight: 600;
+    background-color: $blue-primary;
+  }
+
+  .login__or {
+    @include flex(space-around, center);
+    margin: 20px 0;
+    p {
+      text-transform: uppercase;
+      font-size: $font12;
+      font-weight: bold;
+      color: $gray-primary;
+    }
+
+    &::before {
+      content: '';
+      width: 101px;
+      height: 1px;
+      background-color: $gray-secondary;
+    }
+
+    &:after {
+      content: '';
+      width: 101px;
+      height: 1px;
+      background-color: $gray-secondary;
+    }
+  }
+
+  .login__fb {
+    @include flex(center, center);
+    margin-bottom: 20px;
+    .link {
+      margin-left: 5px;
+      font-size: $font13;
+    }
+  }
+
+  .login__senha {
+    text-align: center;
+
+    .link {
+      font-size: $font12;
+
+      &--regular {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/*--------------------------------------- 
+// [END CONTAINER LOGIN]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$CONTAINER CREATE]
+----------------------------------------*/
+
+.create {
+  @include border();
+  background-color: $white-primary;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin: 20px 0;
+
+  .create__text {
+    font-size: $font13;
+    text-align: center;
+
+    .link--primary {
+      color: $blue-primary;
+    }
+  }
+}
+
+/*--------------------------------------- 
+// [END CONTAINER CREATE]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$CONTAINER APPs]
+----------------------------------------*/
+
+.c-app {
+  width: 100%;
+  text-align: center;
+
+  .c-app__text {
+    font-size: $font14;
+  }
+
+  .c-app__images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .c-images {
+    width: 136px;
+    height: auto;
+  }
+
+  .c-images__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*--------------------------------------- 
+// [END CONTAINER APPs]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$CONTAINER FOOTER]
+----------------------------------------*/
+
+.c-footer {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+
+  .c-menu {
+    display: flex;
+  }
+}
+/*--------------------------------------- 
+// [END CONTAINER FOOTER]
+----------------------------------------*/

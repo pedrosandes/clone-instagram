@@ -1,0 +1,266 @@
+/*--------------------------------------- 
+[$colors]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END colors]
+----------------------------------------*/
+/*--------------------------------------- 
+[$ FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END  FONTS sizes]
+----------------------------------------*/
+input[type=text] {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  outline-color: #8e8e8e;
+  width: 100%;
+  max-width: 268px;
+  padding: 13px 0px 13px 8px;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 268px;
+  height: 29.6px;
+  cursor: pointer;
+}
+
+a {
+  color: #385185;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+p {
+  color: #262626;
+}
+
+/*--------------------------------------- 
+[$reset]
+----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------- 
+// [END reset]
+----------------------------------------*/
+/*--------------------------------------- 
+[$universal]
+----------------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------------------------------------- 
+// [END universal]
+----------------------------------------*/
+/*--------------------------------------- 
+[$colors]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END colors]
+----------------------------------------*/
+/*--------------------------------------- 
+[$ FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END  FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+[$colors]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END colors]
+----------------------------------------*/
+/*--------------------------------------- 
+[$ FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END  FONTS sizes]
+----------------------------------------*/
+body {
+  color: #262626;
+  background-color: #fafafa;
+}
+
+/*--------------------------------------- 
+[$CONTAINERS]
+----------------------------------------*/
+.c-site {
+  width: 100%;
+  max-width: 935px;
+  margin: auto;
+}
+
+.c-main {
+  display: flex;
+  margin-top: 32px;
+  padding: 0 45px;
+}
+
+.l-login {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: -10px;
+}
+
+/*--------------------------------------- 
+// [END CONTAINERS]
+----------------------------------------*/
+/*--------------------------------------- 
+[$CONTAINER LOGIN]
+----------------------------------------*/
+.c-login {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 10px 30px 20px 30px;
+  background-color: #ffffff;
+}
+.c-login .c-login__brand {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+.c-login .c-login__content {
+  text-align: center;
+}
+.c-login .c-login__input {
+  background-color: #fafafa;
+}
+.c-login .c-login__input:nth-child(2) {
+  margin: 5px 0 10px 0;
+}
+.c-login .c-login__btn {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #0095f6;
+}
+.c-login .login__or {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.c-login .login__or p {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #8e8e8e;
+}
+.c-login .login__or::before {
+  content: "";
+  width: 101px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+.c-login .login__or:after {
+  content: "";
+  width: 101px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+.c-login .login__fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.c-login .login__fb .link {
+  margin-left: 5px;
+  font-size: 0.813rem;
+}
+.c-login .login__senha {
+  text-align: center;
+}
+.c-login .login__senha .link {
+  font-size: 0.75rem;
+}
+.c-login .login__senha .link--regular {
+  font-weight: 400;
+}
+
+/*--------------------------------------- 
+// [END CONTAINER LOGIN]
+----------------------------------------*/
+/*--------------------------------------- 
+[$CONTAINER CREATE]
+----------------------------------------*/
+.create {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin: 20px 0;
+}
+.create .create__text {
+  font-size: 0.813rem;
+  text-align: center;
+}
+.create .create__text .link--primary {
+  color: #0095f6;
+}
+
+/*--------------------------------------- 
+// [END CONTAINER CREATE]
+----------------------------------------*/
+/*--------------------------------------- 
+[$CONTAINER APPs]
+----------------------------------------*/
+.c-app {
+  width: 100%;
+  text-align: center;
+}
+.c-app .c-app__text {
+  font-size: 0.875rem;
+}
+.c-app .c-app__images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.c-app .c-images {
+  width: 136px;
+  height: auto;
+}
+.c-app .c-images__img {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------------- 
+// [END CONTAINER APPs]
+----------------------------------------*/
+/*--------------------------------------- 
+[$CONTAINER FOOTER]
+----------------------------------------*/
+.c-footer {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+}
+.c-footer .c-menu {
+  display: flex;
+}
+
+/*--------------------------------------- 
+// [END CONTAINER FOOTER]
+----------------------------------------*/
+
+/*# sourceMappingURL=login.css.map */
