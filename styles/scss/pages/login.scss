@@ -67,7 +67,7 @@ body {
 
   .login__or {
     @include flex(space-around, center);
-    margin: 20px 0;
+    margin: 20px 0 25px 0;
     p {
       text-transform: uppercase;
       font-size: $font12;
@@ -174,21 +174,4 @@ body {
 
 /*--------------------------------------- 
 // [END CONTAINER APPs]
-----------------------------------------*/
-
-/*--------------------------------------- 
-[$CONTAINER FOOTER]
-----------------------------------------*/
-
-.c-footer {
-  width: 100%;
-  max-width: 760px;
-  margin: auto;
-
-  .c-menu {
-    display: flex;
-  }
-}
-/*--------------------------------------- 
-// [END CONTAINER FOOTER]
 ----------------------------------------*/

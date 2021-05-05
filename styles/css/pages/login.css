@@ -153,7 +153,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 0 25px 0;
 }
 .c-login .login__or p {
   text-transform: uppercase;
@@ -246,21 +246,6 @@ body {
 
 /*--------------------------------------- 
 // [END CONTAINER APPs]
-----------------------------------------*/
-/*--------------------------------------- 
-[$CONTAINER FOOTER]
-----------------------------------------*/
-.c-footer {
-  width: 100%;
-  max-width: 760px;
-  margin: auto;
-}
-.c-footer .c-menu {
-  display: flex;
-}
-
-/*--------------------------------------- 
-// [END CONTAINER FOOTER]
 ----------------------------------------*/
 
 /*# sourceMappingURL=login.css.map */
