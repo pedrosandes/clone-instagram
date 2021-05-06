@@ -20,6 +20,7 @@ body {
   display: flex;
   margin-top: 32px;
   padding: 0 45px;
+  padding-bottom: 52px;
 
   @media (max-width: 426px) {
     margin-top: initial;
@@ -48,6 +49,7 @@ body {
     align-items: center;
     width: 100%;
     margin-left: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -164,7 +166,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 20px 30px;
-  margin: 20px 0;
+  margin: 13px 0 20px 0;
 
   @media (max-width: 426px) {
     background-color: $white-secondary;
@@ -218,3 +220,62 @@ body {
 /*--------------------------------------- 
 // [END CONTAINER APPs]
 ----------------------------------------*/
+
+/*--------------------------------------- 
+[$CONTAINER FOOTER]
+----------------------------------------*/
+
+.c-footer {
+  width: 100%;
+  height: 150px;
+
+  .c-footer__menu {
+    width: 100%;
+    max-width: 620px;
+    margin: auto;
+
+    @media (max-width: 426px) {
+      max-width: 310px;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+  }
+
+  .c-footer__menu--small {
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+    margin-top: 5px;
+
+    @media (max-width: 426px) {
+      max-width: 310px;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+  }
+
+  .c-footer__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .c-footer__link {
+    font-size: $font12;
+    font-weight: 400;
+    color: $gray-primary;
+  }
+
+  .c-footer__link--margin {
+    margin-right: 20px;
+  }
+
+  .c-footer__copyright {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+
+/*--------------------------------------- 
+// [END CONTAINER FOOTER]
+---------------------------------------*/

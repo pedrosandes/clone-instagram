@@ -1,6 +1,24 @@
 //AQUI FICA OS MIXINS
 @import './settings';
 
+/*--------------------------------------- 
+[$GERAL]
+----------------------------------------*/
+
+@mixin flex($justify: flex-start, $align: flex-start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/*--------------------------------------- 
+// [END GERAL]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$SCREEN LOGIN]
+----------------------------------------*/
+
 @mixin border {
   border: 1px solid $gray-secondary;
   border-radius: 3px;
@@ -11,8 +29,6 @@
   border-radius: 3px;
 }
 
-@mixin flex($justify: flex-start, $align: flex-start) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
+/*--------------------------------------- 
+// [END SCREEN LOGIN]
+----------------------------------------*/
