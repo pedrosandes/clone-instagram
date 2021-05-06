@@ -12,14 +12,13 @@ body {
 
 .c-site {
   width: 100%;
-  max-width: 935px;
-  margin: auto;
+  @include flex(flex-start, center);
+  flex-direction: column;
 }
 
 .c-main {
   display: flex;
   margin-top: 32px;
-  padding: 0 45px;
   padding-bottom: 52px;
 
   @media (max-width: 426px) {
@@ -231,33 +230,23 @@ body {
 
   .c-footer__menu {
     width: 100%;
-    max-width: 620px;
-    margin: auto;
-
-    @media (max-width: 426px) {
-      max-width: 310px;
-      padding: 0 30px;
-      box-sizing: border-box;
-    }
-  }
-
-  .c-footer__menu--small {
-    width: 100%;
-    max-width: 560px;
-    margin: auto;
-    margin-top: 5px;
-
-    @media (max-width: 426px) {
-      max-width: 310px;
-      padding: 0 30px;
-      box-sizing: border-box;
-    }
+    display: flex;
+    justify-content: center;
   }
 
   .c-footer__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+
+  .c-footer__item {
+    margin: 0 7px;
+
+    @media (max-width: 426px) {
+      margin: 0 10px;
+    }
   }
 
   .c-footer__link {
@@ -272,7 +261,7 @@ body {
 
   .c-footer__copyright {
     text-align: center;
-    margin: 20px auto;
+    padding: 20px 0 32px 0;
   }
 }
 
