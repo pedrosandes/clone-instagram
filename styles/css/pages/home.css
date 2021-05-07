@@ -1,0 +1,210 @@
+/*--------------------------------------- 
+[$colors]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END colors]
+----------------------------------------*/
+/*--------------------------------------- 
+[$ FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END  FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+[$GERAL]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END GERAL]
+----------------------------------------*/
+/*--------------------------------------- 
+[$SCREEN LOGIN]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END SCREEN LOGIN]
+----------------------------------------*/
+input[type=text] {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  outline-color: #8e8e8e;
+  width: 100%;
+  max-width: 268px;
+  padding: 13px 0px 13px 8px;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 268px;
+  height: 29.6px;
+  cursor: pointer;
+}
+
+a {
+  color: #385185;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+p {
+  color: #262626;
+}
+
+/*--------------------------------------- 
+[$reset]
+----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------- 
+// [END reset]
+----------------------------------------*/
+/*--------------------------------------- 
+[$universal]
+----------------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------------------------------------- 
+// [END universal]
+----------------------------------------*/
+/*--------------------------------------- 
+[$colors]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END colors]
+----------------------------------------*/
+/*--------------------------------------- 
+[$ FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END  FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+[$GERAL]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END GERAL]
+----------------------------------------*/
+/*--------------------------------------- 
+[$SCREEN LOGIN]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END SCREEN LOGIN]
+----------------------------------------*/
+/*--------------------------------------- 
+[$colors]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END colors]
+----------------------------------------*/
+/*--------------------------------------- 
+[$ FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+// [END  FONTS sizes]
+----------------------------------------*/
+/*--------------------------------------- 
+[$CONTAINERS]
+----------------------------------------*/
+.l-site {
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .c-nav,
+.search-bar {
+    display: none;
+  }
+}
+
+/*--------------------------------------- 
+// [END CONTAINERS]
+----------------------------------------*/
+/*--------------------------------------- 
+[$HEADER]
+----------------------------------------*/
+.header-bg {
+  background-color: #fafafa;
+  box-shadow: 0px 0.33px 0px #a6a6aa;
+}
+@media (min-width: 768px) {
+  .header-bg {
+    background-color: #ffffff;
+  }
+}
+
+.c-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .c-header {
+    max-width: 975px;
+    margin: 0 auto;
+    height: 54px;
+    padding: 0 10px;
+  }
+  .c-header .cam {
+    display: none;
+  }
+  .c-header .sand {
+    display: none;
+  }
+}
+.c-header .logo {
+  width: 105px;
+  height: auto;
+}
+.c-header .search-bar {
+  width: 215px;
+  height: 28px;
+  box-sizing: border-box;
+}
+.c-header .search-bar .bar {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+.c-header .search-bar .bar--image {
+  background-image: url(../../../assets/icons/lupa-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 33%;
+}
+.c-header .search-bar .bar::placeholder {
+  text-align: center;
+}
+.c-header .menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.c-header .menu .menu__item {
+  margin: 0 10px;
+}
+.c-header .menu .profile-icon {
+  width: 23px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: auto;
+}
+
+/*--------------------------------------- 
+// [END HEADER]
+----------------------------------------*/
+
+/*# sourceMappingURL=home.css.map */

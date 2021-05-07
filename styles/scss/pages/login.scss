@@ -76,6 +76,7 @@ body {
     margin: 20px 0 40px 0;
   }
 
+  // LOGIN FORM
   .c-login__content {
     text-align: center;
 
@@ -102,6 +103,7 @@ body {
     background-color: $blue-primary;
   }
 
+  // LOGIN COM
   .login__or {
     @include flex(space-between, center);
     margin: 20px 0 25px 0;
@@ -138,6 +140,7 @@ body {
     }
   }
 
+  // ESQUECI A SENHA
   .login__senha {
     text-align: center;
 
@@ -159,6 +162,7 @@ body {
 [$CONTAINER CREATE]
 ----------------------------------------*/
 
+// CRIAR CONTA
 .create {
   @include border();
   background-color: $white-primary;
@@ -190,6 +194,7 @@ body {
 [$CONTAINER APPs]
 ----------------------------------------*/
 
+// FAZER DOWNLOAD
 .c-app {
   width: 100%;
   text-align: center;
@@ -223,7 +228,6 @@ body {
 /*--------------------------------------- 
 [$CONTAINER FOOTER]
 ----------------------------------------*/
-
 .c-footer {
   width: 100%;
   height: 150px;
