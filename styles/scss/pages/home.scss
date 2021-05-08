@@ -4,6 +4,15 @@
 [$CONTAINERS]
 ----------------------------------------*/
 
+body {
+  color: $black-primary;
+  overflow-x: hidden;
+
+  @media (min-width: 768px) {
+    background-color: $white-secondary;
+  }
+}
+
 .l-site {
   width: 100vw;
 }
@@ -12,6 +21,27 @@
 .search-bar {
   @media (max-width: 768px) {
     display: none;
+  }
+}
+
+.c-main {
+  @media (min-width: 768px) {
+    padding: 30px 0;
+    @include flex(center, flex-start);
+  }
+}
+
+.main-content {
+  @media (min-width: 768px) {
+    width: 614px;
+    @include flex(flex-start, center);
+    flex-direction: column;
+  }
+}
+
+.c-posts {
+  @media (min-width: 768px) {
+    width: 100%;
   }
 }
 
@@ -25,7 +55,8 @@
 
 .header-bg {
   background-color: $white-secondary;
-  box-shadow: 0px 0.33px 0px #a6a6aa;
+  @include box-shadow;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     background-color: $white-primary;
@@ -99,4 +130,176 @@
 
 /*--------------------------------------- 
 // [END HEADER]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$STORYS]
+----------------------------------------*/
+
+.c-storys {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  padding: 0 10px;
+  overflow: auto;
+  @include box-shadow;
+
+  @media (min-width: 768px) {
+    box-shadow: none;
+    @include border;
+    padding: 0 16px;
+    margin-bottom: 20px;
+    background-color: $white-primary;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .story {
+    @include flex(flex-start, center);
+    flex-direction: column;
+    padding: 12px 0 8px 0;
+
+    .gradient-img {
+      @include box-radius(62px);
+      @include flex(center, center);
+      @include gradient;
+      margin-bottom: 5px;
+    }
+    .story__img {
+      @include box-radius(56px);
+      border: 2px solid $white-primary;
+    }
+    .story__text {
+      font-size: $font12;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+/*--------------------------------------- 
+// [END STORYS]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$POST]
+----------------------------------------*/
+
+.post {
+  width: 100%;
+  margin-bottom: 30px;
+  border-top: 1px solid $gray-secondary;
+  border-bottom: 1px solid $gray-secondary;
+
+  @media (min-width: 768px) {
+    background-color: $white-primary;
+    @include border;
+    margin-bottom: 60px;
+  }
+  // POST HEADER
+  .post__header {
+    display: flex;
+    padding: 10px;
+
+    @media (min-width: 768px) {
+      padding: 16px;
+    }
+
+    .post__profile {
+      @include box-radius(32px);
+      .post__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .post__account {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      .post__name {
+        font-size: $font13;
+        font-weight: bold;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+      }
+
+      .post__location {
+        font-size: $font11;
+      }
+    }
+
+    .more {
+      margin-left: auto;
+    }
+  }
+
+  // POST IMAGE
+  .post__images {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      height: 629px;
+      overflow: hidden;
+    }
+
+    .post__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // POST FOOTER
+  .post__footer {
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+      padding: 0 16px;
+    }
+    .post__interacao {
+      display: flex;
+      .post__icon {
+        padding: 8px;
+      }
+
+      .post__icon--margin {
+        margin-left: auto;
+      }
+
+      .post__icon--nop {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .post__likes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    .post__likesImg {
+      @include box-radius(17px);
+      margin-right: 5px;
+    }
+  }
+
+  .post__text {
+    font-size: $font13;
+  }
+
+  .post__comment {
+    padding-bottom: 10px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 16px;
+    }
+  }
+}
+/*--------------------------------------- 
+// [END POST]
 ----------------------------------------*/
