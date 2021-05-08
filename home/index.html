@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/css/pages/home.css" />
-    <title>Instagram Home</title>
+    <title>Instagram</title>
   </head>
   <body>
     <div class="l-site">
       <!-- HEADER -->
       <div class="header-bg">
         <header class="c-header">
-          <a href="#">
+          <a class="cam" href="#">
             <img
-              class="cam"
+              class="cam-icon"
               src="../assets/icons/header-icons/cam-icon.svg"
               alt="Cam icon"
             />
           </a>
 
-          <img
-            class="logo"
-            src="../assets/icons/insta-brand.svg"
-            alt="Instagram brand"
-          />
-
-          <a href="#">
+          <div class="logo">
             <img
-              class="sand"
+              class="logo__img"
+              src="../assets/icons/insta-brand.svg"
+              alt="Instagram brand"
+            />
+          </div>
+
+          <a class="sand" href="#">
+            <img
+              class="sand-icon"
               src="../assets/icons/sand-icon.svg"
               alt="Sand icon"
             />
@@ -41,46 +43,48 @@
 
           <!-- SUPERIOR NAV DESKTOP-->
           <nav class="c-nav">
-            <ul class="menu">
-              <li class="menu__item">
-                <a href="">
-                  <img
-                    src="../assets/icons/menu/home-icon.svg"
-                    alt="Home-icon"
-                  />
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="">
-                  <img src="../assets/icons/sand-icon.svg" alt="Home-icon" />
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="">
-                  <img
-                    src="../assets/icons/menu/search-icon.svg"
-                    alt="Home-icon"
-                  />
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="">
-                  <img
-                    src="../assets/icons/menu/like-icon.svg"
-                    alt="Home-icon"
-                  />
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="">
-                  <img
-                    class="profile-icon"
-                    src="../assets/icons/menu/profile-icon.jpg"
-                    alt="Home-icon"
-                  />
-                </a>
-              </li>
-            </ul>
+            <div class="nav">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="">
+                    <img
+                      src="../assets/icons/menu/home-icon.svg"
+                      alt="Home-icon"
+                    />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="">
+                    <img src="../assets/icons/sand-icon.svg" alt="Home-icon" />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="">
+                    <img
+                      src="../assets/icons/menu/search-icon.svg"
+                      alt="Home-icon"
+                    />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="">
+                    <img
+                      src="../assets/icons/menu/like-icon.svg"
+                      alt="Home-icon"
+                    />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="">
+                    <img
+                      class="profile-icon"
+                      src="../assets/icons/menu/profile-icon.jpg"
+                      alt="Home-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </header>
         <!-- /.c-header -->
@@ -95,7 +99,7 @@
               <div class="gradient-img">
                 <img
                   class="story__img"
-                  src="../assets/images/profiles/profile-1.png"
+                  src="../assets/icons/menu/profile-icon.jpg"
                   alt="Image profile"
                 />
               </div>
@@ -150,11 +154,11 @@
               <div class="gradient-img">
                 <img
                   class="story__img"
-                  src="../assets/icons/menu/profile-icon.jpg"
+                  src="../assets/images/profiles/profile-1.png"
                   alt="Image profile"
                 />
               </div>
-              <span class="story__text">craig_love</span>
+              <span class="story__text">coulen</span>
             </div>
           </div>
           <!-- /.c-storys -->
@@ -319,7 +323,194 @@
           </div>
           <!-- /.c-posts -->
         </section>
-        <aside class="c-aside"></aside>
+
+        <aside class="c-aside">
+          <div class="aside-profile">
+            <div class="aside-profile__images">
+              <img
+                class="aside-profile__img"
+                src="../assets/icons/menu/profile-icon.jpg"
+                alt="image profile"
+              />
+            </div>
+            <div class="aside-profile__body">
+              <span class="aside-profile__name">
+                <a class="link link--black" href="#">pedrrowtf</a>
+              </span>
+              <span class="aside-Profile__link">
+                <a class="link" href="#">Mudar</a>
+              </span>
+            </div>
+          </div>
+          <!-- /. aside-profile -->
+          <div class="aside-sugestions">
+            <div class="aside-sugestions__header">
+              <span class="aside-sugestions__left">Sugestões para você</span>
+              <span class="aside-sugestions__right">
+                <a class="link link--black" href="#">Ver tudo</a>
+              </span>
+            </div>
+          </div>
+          <!-- /. aside-sugestions-->
+          <div class="aside-sugestions-new">
+            <div class="aside-profile">
+              <div class="aside-profile__imagesSugestion">
+                <img
+                  class="aside-profile__img"
+                  src="../assets/images/profiles/profile-11.jpg"
+                  alt="image profile"
+                />
+              </div>
+              <div class="aside-profile__body">
+                <span class="aside-profile__name">
+                  <a class="link link--black" href="#">Joaozinho_</a>
+                  <span class="aside-profile__new">Novo no instagram</span>
+                </span>
+                <span
+                  class="aside-profile__link aside-profile__link--negativeM"
+                >
+                  <a class="link" href="#">Seguir</a>
+                </span>
+              </div>
+            </div>
+            <!-- /.New user aside-profile-->
+            <div class="aside-profile">
+              <div class="aside-profile__imagesSugestion">
+                <img
+                  class="aside-profile__img"
+                  src="../assets/images/profiles/profile-9.jpg"
+                  alt="image profile"
+                />
+              </div>
+              <div class="aside-profile__body">
+                <span class="aside-profile__name">
+                  <a class="link link--black" href="#">carlinhos13</a>
+                  <span class="aside-profile__new">Novo no instagram</span>
+                </span>
+                <span
+                  class="aside-profile__link aside-profile__link--negativeM"
+                >
+                  <a class="link" href="#">Seguir</a>
+                </span>
+              </div>
+            </div>
+            <!-- /.New user aside-profile-->
+            <div class="aside-profile">
+              <div class="aside-profile__imagesSugestion">
+                <img
+                  class="aside-profile__img"
+                  src="../assets/images/profiles/profile-10.jpg"
+                  alt="image profile"
+                />
+              </div>
+              <div class="aside-profile__body">
+                <span class="aside-profile__name">
+                  <a class="link link--black" href="#">Jhon Carlos</a>
+                  <span class="aside-profile__new">Novo no instagram</span>
+                </span>
+                <span
+                  class="aside-profile__link aside-profile__link--negativeM"
+                >
+                  <a class="link" href="#">Seguir</a>
+                </span>
+              </div>
+            </div>
+            <!-- /.New user aside-profile-->
+            <div class="aside-profile">
+              <div class="aside-profile__imagesSugestion">
+                <img
+                  class="aside-profile__img"
+                  src="../assets/images/profiles/profile-8.jpg"
+                  alt="image profile"
+                />
+              </div>
+              <div class="aside-profile__body">
+                <span class="aside-profile__name">
+                  <a class="link link--black" href="#">Auntin Agust</a>
+                  <span class="aside-profile__new">Novo no instagram</span>
+                </span>
+                <span
+                  class="aside-profile__link aside-profile__link--negativeM"
+                >
+                  <a class="link" href="#">Seguir</a>
+                </span>
+              </div>
+            </div>
+            <!-- /.New user aside-profile-->
+            <div class="aside-profile">
+              <div class="aside-profile__imagesSugestion">
+                <img
+                  class="aside-profile__img"
+                  src="../assets/images/profiles/profile-7.jpg"
+                  alt="image profile"
+                />
+              </div>
+              <div class="aside-profile__body">
+                <span class="aside-profile__name">
+                  <a class="link link--black" href="#">ianzinho__14</a>
+                  <span class="aside-profile__new">Novo no instagram</span>
+                </span>
+                <span
+                  class="aside-profile__link aside-profile__link--negativeM"
+                >
+                  <a class="link" href="#">Seguir</a>
+                </span>
+              </div>
+            </div>
+            <!-- /.New user aside-profile-->
+          </div>
+          <!-- /. aside-sugestions-new-->
+          <nav class="c-aside-nav">
+            <ul class="aside-nav">
+              <li>
+                <a class="link link--gray link--regular" href="#">Sobre</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">Ajuda</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">Imprensa</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">API</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">Carreiras</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">
+                  Privacidade
+                </a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">Termos</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">
+                  Localizações
+                </a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">
+                  Principais contas
+                </a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">Hashtags</a>
+              </li>
+              <li>
+                <a class="link link--gray link--regular" href="#">Idioma</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /. c-aside-nav-->
+          <div class="aside-copyright">
+            <span class="link link--gray link--regular">
+              © 2021 Instagram do Facebook
+            </span>
+          </div>
+          <!-- /. aside-copyright-->
+        </aside>
         <!-- /.c-aside -->
       </main>
       <!-- /.c-main-->
