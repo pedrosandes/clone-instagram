@@ -271,7 +271,7 @@ body {
   display: flex;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .c-header .logo {
     flex: 1;
   }
