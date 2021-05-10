@@ -223,6 +223,18 @@ body {
   }
 }
 
+.c-bottom-bar {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+@media (min-width: 769px) {
+  .c-bottom-bar {
+    display: none;
+  }
+}
+
 /*--------------------------------------- 
 // [END CONTAINERS]
 ----------------------------------------*/
@@ -384,9 +396,11 @@ body {
 ----------------------------------------*/
 .post {
   width: 100%;
-  margin-bottom: 30px;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
+}
+.post:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .post {
@@ -584,6 +598,27 @@ body {
 
 /*--------------------------------------- 
 // [END c-aside-nav]
+----------------------------------------*/
+/*--------------------------------------- 
+[$BOTTOM-NAV]
+----------------------------------------*/
+.menu .menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 19px;
+}
+.menu .menu__link {
+  width: 23px;
+}
+.menu .profile-img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+/*--------------------------------------- 
+// [END BOTTOM-NAV]
 ----------------------------------------*/
 
 /*# sourceMappingURL=home.css.map */

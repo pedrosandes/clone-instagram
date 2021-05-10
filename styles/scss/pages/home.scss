@@ -92,6 +92,17 @@ body {
   }
 }
 
+.c-bottom-bar {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: $white-tertiary;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
 /*--------------------------------------- 
 // [END CONTAINERS]
 ----------------------------------------*/
@@ -255,9 +266,12 @@ body {
 
 .post {
   width: 100%;
-  margin-bottom: 30px;
   border-top: 1px solid $gray-secondary;
   border-bottom: 1px solid $gray-secondary;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: 768px) {
     background-color: $white-primary;
@@ -466,4 +480,28 @@ body {
 
 /*--------------------------------------- 
 // [END c-aside-nav]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$BOTTOM-NAV]
+----------------------------------------*/
+
+.menu {
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 19px;
+  }
+
+  .menu__link {
+    width: 23px;
+  }
+  .profile-img {
+    @include box-radius(23px);
+  }
+}
+
+/*--------------------------------------- 
+// [END BOTTOM-NAV]
 ----------------------------------------*/
