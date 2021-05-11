@@ -14,8 +14,6 @@ input[type='text'] {
 button {
   @include border--transparent();
   border-radius: 3px;
-  width: 100%;
-  max-width: 268px;
   height: 29.6px;
   cursor: pointer;
 }

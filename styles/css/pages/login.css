@@ -43,8 +43,6 @@ button {
   border: 1px solid transparent;
   border-radius: 3px;
   border-radius: 3px;
-  width: 100%;
-  max-width: 268px;
   height: 29.6px;
   cursor: pointer;
 }
@@ -125,6 +123,151 @@ ul {
 ----------------------------------------*/
 /*--------------------------------------- 
 // [END  FONTS sizes]
+----------------------------------------*/
+.l-site {
+  width: 100vw;
+}
+
+/*--------------------------------------- 
+[$HEADER]
+----------------------------------------*/
+.c-nav {
+  display: flex;
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .c-nav,
+.search-bar {
+    display: none;
+  }
+}
+
+.header-bg {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dbdbdb;
+}
+@media (min-width: 767px) {
+  .header-bg {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.c-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 767px) {
+  .c-header {
+    max-width: 975px;
+    margin: 0 auto;
+    height: 54px;
+    padding: 0;
+    padding-left: 25px;
+  }
+  .c-header .cam {
+    display: none;
+  }
+  .c-header .sand {
+    display: none;
+  }
+}
+.c-header .logo {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .c-header .logo {
+    flex: 1;
+  }
+}
+.c-header .logo .logo__img {
+  width: 105px;
+  height: auto;
+}
+.c-header .search-bar {
+  max-width: 215px;
+  height: 28px;
+  flex: 2;
+}
+.c-header .search-bar .bar {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+.c-header .search-bar .bar--image {
+  background-image: url(../../../assets/icons/lupa-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 33%;
+}
+.c-header .search-bar .bar::placeholder {
+  text-align: center;
+}
+.c-header .nav {
+  margin-left: auto;
+}
+.c-header .menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.c-header .menu .menu__item {
+  align-self: flex-end;
+  margin: 0 10px;
+}
+.c-header .menu .profile-icon {
+  width: 23px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: auto;
+}
+
+/*--------------------------------------- 
+// [END HEADER]
+----------------------------------------*/
+/*--------------------------------------- 
+[$BOTTOM-NAV]
+----------------------------------------*/
+.c-bottom-bar {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+@media (min-width: 769px) {
+  .c-bottom-bar {
+    display: none;
+  }
+}
+
+.menu .menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 19px;
+}
+.menu .menu__link {
+  width: 23px;
+}
+.menu .profile-img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+/*--------------------------------------- 
+// [END BOTTOM-NAV]
 ----------------------------------------*/
 body {
   color: #262626;
@@ -230,6 +373,7 @@ body {
   color: #ffffff;
   font-weight: 600;
   background-color: #0095f6;
+  width: 100%;
 }
 .c-login .login__or {
   display: flex;

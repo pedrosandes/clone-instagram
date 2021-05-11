@@ -2,3 +2,156 @@
 @import './generic';
 @import './mixins';
 @import './settings';
+
+.l-site {
+  width: 100vw;
+}
+
+/*--------------------------------------- 
+[$HEADER]
+----------------------------------------*/
+
+.c-nav {
+  display: flex;
+  flex: 1;
+}
+
+.c-nav,
+.search-bar {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header-bg {
+  background-color: $white-secondary;
+  box-sizing: border-box;
+  border-bottom: 1px solid $gray-secondary;
+
+  @media (min-width: 767px) {
+    width: 100%;
+    background-color: $white-primary;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.c-header {
+  width: 100%;
+  @include flex(space-between, center);
+  padding: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: 767px) {
+    max-width: 975px;
+    margin: 0 auto;
+    height: 54px;
+    padding: 0;
+    padding-left: 25px;
+
+    .cam {
+      display: none;
+    }
+
+    .sand {
+      display: none;
+    }
+  }
+
+  .logo {
+    @media (min-width: 767px) {
+      flex: 1;
+    }
+    display: flex;
+    align-items: center;
+
+    .logo__img {
+      width: 105px;
+      height: auto;
+    }
+  }
+
+  // SEARCH HEADER
+  .search-bar {
+    max-width: 215px;
+    height: 28px;
+    flex: 2;
+    .bar {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      background-color: $white-secondary;
+    }
+
+    .bar--image {
+      background-image: url(../../../assets/icons/lupa-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 33%;
+    }
+
+    .bar::placeholder {
+      text-align: center;
+    }
+  }
+
+  // MENU HEADER
+  .nav {
+    margin-left: auto;
+  }
+  .menu {
+    @include flex(flex-start, center);
+    flex: 1;
+
+    .menu__item {
+      align-self: flex-end;
+      margin: 0 10px;
+    }
+
+    .profile-icon {
+      width: 23px;
+      border-radius: 50%;
+      object-fit: cover;
+      height: auto;
+    }
+  }
+}
+
+/*--------------------------------------- 
+// [END HEADER]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$BOTTOM-NAV]
+----------------------------------------*/
+
+.c-bottom-bar {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: $white-tertiary;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.menu {
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 19px;
+  }
+
+  .menu__link {
+    width: 23px;
+  }
+  .profile-img {
+    @include box-radius(23px);
+  }
+}
+
+/*--------------------------------------- 
+// [END BOTTOM-NAV]
+----------------------------------------*/

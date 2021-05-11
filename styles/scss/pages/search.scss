@@ -1,0 +1,123 @@
+@import '../screen.scss';
+/*--------------------------------------- 
+[$header]
+----------------------------------------*/
+
+@media (max-width: 767px) {
+  .header-bg {
+    border-bottom: none;
+  }
+}
+
+.c-header {
+  @media (max-width: 767px) {
+    .logo {
+      display: none;
+    }
+
+    .search-bar {
+      display: initial;
+    }
+
+    .sand {
+      display: none;
+    }
+
+    .cam {
+      display: none;
+    }
+
+    .picture {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: 767px) {
+    .picture {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .search-bar {
+      width: 100%;
+      max-width: 100%;
+      min-width: 217px;
+      height: 36px;
+      margin-right: 10px;
+      .bar {
+        max-width: 100%;
+        outline: none;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: none;
+        background: #7676801f;
+
+        &::placeholder {
+          padding-left: 22px;
+          text-align: start;
+        }
+      }
+
+      .bar--image {
+        background-image: url(../../../assets/icons/lupa-icon.svg);
+        background-repeat: no-repeat;
+        background-position: 2%;
+
+        @media (max-width: 425px) {
+          background-position: 4%;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------- 
+// [END header]
+----------------------------------------*/
+
+/*--------------------------------------- 
+[$buttons-search]
+----------------------------------------*/
+
+.c-buttons {
+  display: flex;
+  padding: 0 10px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .buttons-search {
+    @include flex(center, center);
+    background-color: $white-primary;
+    padding: 0 10px;
+    border: 1px solid #3c3c432e;
+    border-radius: 6px;
+    width: 100%;
+    max-width: inherit;
+    height: 29.6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: $black-primary;
+  }
+
+  .buttons-search:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  .button-icon {
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+}
+
+/*--------------------------------------- 
+// [END buttons-search]
+----------------------------------------*/
+
+.c-bottom-bar {
+  position: fixed;
+  background-color: $white-primary;
+}

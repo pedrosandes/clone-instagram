@@ -43,8 +43,6 @@ button {
   border: 1px solid transparent;
   border-radius: 3px;
   border-radius: 3px;
-  width: 100%;
-  max-width: 268px;
   height: 29.6px;
   cursor: pointer;
 }
@@ -126,127 +124,31 @@ ul {
 /*--------------------------------------- 
 // [END  FONTS sizes]
 ----------------------------------------*/
-/*--------------------------------------- 
-[$GENERAL]
-----------------------------------------*/
-.link {
-  font-size: 0.75rem;
-  color: #0095f6;
-  font-weight: 600;
-}
-
-.link--black {
-  color: #262626;
-}
-
-.link--gray {
-  color: #c7c7c7;
-}
-
-.link--regular {
-  font-weight: 400;
-}
-
-/*--------------------------------------- 
-// [END GENERAL]
-----------------------------------------*/
-/*--------------------------------------- 
-[$CONTAINERS]
-----------------------------------------*/
-body {
-  color: #262626;
-  overflow-x: hidden;
-}
-@media (min-width: 768px) {
-  body {
-    background-color: #fafafa;
-  }
-}
-
 .l-site {
   width: 100vw;
 }
 
+/*--------------------------------------- 
+[$HEADER]
+----------------------------------------*/
 .c-nav {
   display: flex;
   flex: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .c-nav,
 .search-bar {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
-  .c-main {
-    padding: 30px 0;
-    margin-top: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-content {
-    width: 614px;
-    margin-right: 28px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-@media (min-width: 1450px) {
-  .main-content {
-    position: relative;
-    left: -9.5%;
-  }
-}
-
-@media (min-width: 768px) {
-  .c-posts {
-    width: 100%;
-  }
-}
-
-.c-aside {
-  width: 293px;
-  position: fixed;
-  right: 18%;
-}
-@media (max-width: 1450px) {
-  .c-aside {
-    display: none;
-  }
-}
-
-.c-bottom-bar {
-  width: 100%;
-  position: sticky;
-  bottom: 0;
-  background-color: #f2f2f2;
-}
-@media (min-width: 769px) {
-  .c-bottom-bar {
-    display: none;
-  }
-}
-
-/*--------------------------------------- 
-// [END CONTAINERS]
-----------------------------------------*/
-/*--------------------------------------- 
-[$HEADER]
-----------------------------------------*/
 .header-bg {
   background-color: #fafafa;
   box-sizing: border-box;
   border-bottom: 1px solid #dbdbdb;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header-bg {
     width: 100%;
     background-color: #ffffff;
@@ -264,7 +166,7 @@ body {
   padding: 10px;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 767px) {
   .c-header {
     max-width: 975px;
     margin: 0 auto;
@@ -283,7 +185,7 @@ body {
   display: flex;
   align-items: center;
 }
-@media (min-width: 769px) {
+@media (min-width: 767px) {
   .c-header .logo {
     flex: 1;
   }
@@ -296,7 +198,6 @@ body {
   max-width: 215px;
   height: 28px;
   flex: 2;
-  text-align: center;
 }
 .c-header .search-bar .bar {
   width: 100%;
@@ -336,6 +237,123 @@ body {
 // [END HEADER]
 ----------------------------------------*/
 /*--------------------------------------- 
+[$BOTTOM-NAV]
+----------------------------------------*/
+.c-bottom-bar {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+@media (min-width: 769px) {
+  .c-bottom-bar {
+    display: none;
+  }
+}
+
+.menu .menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 19px;
+}
+.menu .menu__link {
+  width: 23px;
+}
+.menu .profile-img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+/*--------------------------------------- 
+// [END BOTTOM-NAV]
+----------------------------------------*/
+/*--------------------------------------- 
+[$GENERAL]
+----------------------------------------*/
+.link {
+  font-size: 0.75rem;
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.link--black {
+  color: #262626;
+}
+
+.link--gray {
+  color: #c7c7c7;
+}
+
+.link--regular {
+  font-weight: 400;
+}
+
+/*--------------------------------------- 
+// [END GENERAL]
+----------------------------------------*/
+/*--------------------------------------- 
+[$CONTAINERS]
+----------------------------------------*/
+body {
+  color: #262626;
+  overflow-x: hidden;
+}
+@media (min-width: 767px) {
+  body {
+    background-color: #fafafa;
+  }
+}
+
+@media (min-width: 767px) {
+  .c-main {
+    padding: 30px 0;
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 767px) {
+  .main-content {
+    width: 614px;
+    margin-right: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1450px) {
+  .main-content {
+    position: relative;
+    left: -9.5%;
+  }
+}
+
+@media (min-width: 767px) {
+  .c-posts {
+    width: 100%;
+  }
+}
+
+.c-aside {
+  width: 293px;
+  position: fixed;
+  right: 18%;
+}
+@media (max-width: 1450px) {
+  .c-aside {
+    display: none;
+  }
+}
+
+/*--------------------------------------- 
+// [END CONTAINERS]
+----------------------------------------*/
+/*--------------------------------------- 
 [$STORYS]
 ----------------------------------------*/
 .c-storys {
@@ -346,7 +364,7 @@ body {
   padding: 0 10px;
   overflow: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .c-storys {
     box-shadow: none;
     border: 1px solid #dbdbdb;
@@ -402,7 +420,7 @@ body {
 .post:not(:last-child) {
   margin-bottom: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .post {
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
@@ -414,7 +432,7 @@ body {
   display: flex;
   padding: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .post .post__header {
     padding: 16px;
   }
@@ -450,7 +468,7 @@ body {
 .post .post__images {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .post .post__images {
     height: 629px;
     overflow: hidden;
@@ -465,7 +483,7 @@ body {
   padding: 0 10px;
   box-sizing: border-box;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .post .post__footer {
     padding: 0 16px;
   }
@@ -499,7 +517,7 @@ body {
 .post .post__comment {
   padding-bottom: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .post .post__comment {
     padding-bottom: 16px;
   }
@@ -598,27 +616,6 @@ body {
 
 /*--------------------------------------- 
 // [END c-aside-nav]
-----------------------------------------*/
-/*--------------------------------------- 
-[$BOTTOM-NAV]
-----------------------------------------*/
-.menu .menu__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 19px;
-}
-.menu .menu__link {
-  width: 23px;
-}
-.menu .profile-img {
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-}
-
-/*--------------------------------------- 
-// [END BOTTOM-NAV]
 ----------------------------------------*/
 
 /*# sourceMappingURL=home.css.map */
